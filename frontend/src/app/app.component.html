@@ -1,0 +1,16 @@
+<router-outlet />
+<div class="flex h-screen w-full">
+
+  @if(showSideBar){
+  <app-sidebar></app-sidebar>
+  }
+
+  <div class="flex justify-center items-center flex-col flex-1">
+
+    <app-navbar (sidebarToggled)="onToggleSidebar($event)" class="w-full"></app-navbar>
+
+    <div class="w-full content flex-1 p-4 bg-cyan-900">
+    </div>
+
+  </div>
+</div>
